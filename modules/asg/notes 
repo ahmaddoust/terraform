@@ -1,0 +1,9 @@
+/* (cidr_blocks = data.terraform_remote_state.vpc.outputs.vpc_cidr) 
+first check that vpc_cidr is then name of the the output in the parent module, 
+second check if this is in the output file of the parent module. if it isnt add it. 
+ie:      output "vpc_cidr" 
+          {value = module.ahmad_vpc.vpc_cidr}
+
+than you can declare it as cidr_blocks = data.terraform_remote_state.vpc.outputs.vpc_cidr */
+
+
