@@ -1,7 +1,7 @@
 provider "aws" {
     region = var.region
 }
-
+#main
 module "my_asg" {
     source = "../../../modules/asg"
     region                  = var.region
@@ -26,9 +26,9 @@ module "my_asg" {
     asg_max_size            = 4
     asg_min_size            = 2
     asg_des_cap             = 2
-    asg_max_size_green      = 4
-    asg_min_size_green      = 2
-    asg_des_cap_green       = 2
+    asg_max_size_green      = 0
+    asg_min_size_green      = 0
+    asg_des_cap_green       = 0
     
      
 }
