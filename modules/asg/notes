@@ -4,6 +4,4 @@ second check if this is in the output file of the parent module. if it isnt add 
 ie:      output "vpc_cidr" 
           {value = module.ahmad_vpc.vpc_cidr}
 
-than you can declare it as cidr_blocks = data.terraform_remote_state.vpc.outputs.vpc_cidr */
-
-
+then you can declare it as cidr_blocks = data.terraform_remote_state.vpc.outputs.vpc_cidr */
