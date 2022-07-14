@@ -75,26 +75,3 @@ module "my_asg" {
     # asg_name                = var.asg_name  
     # aws-lb-tg-name          = var.aws-lb-tg-name
     # aws-lc-name             = var.aws-lc-name 
-     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

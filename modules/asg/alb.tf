@@ -34,10 +34,7 @@ resource "aws_lb_listener" "aws-lb-blue" {
         arn = aws_lb_target_group.aws-lb-tg-green.arn
       }
     }
-    
-    
-     
-    }
+  }
 }
 
 resource "aws_lb_listener_rule" "static-blue" {
@@ -70,8 +67,7 @@ resource "aws_lb_listener_rule" "static-blue" {
       values = ["/v2"] //var.path_pattern_green
     }
   }
-  }
-
+}
 
 resource "aws_security_group" "alb-sg" {
   name        = "alb-sg-${var.env}" 
@@ -97,5 +93,3 @@ resource "aws_security_group" "alb-sg" {
     Name = "ssh-port"
   }
 }
-
-

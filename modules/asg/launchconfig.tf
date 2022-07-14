@@ -10,8 +10,7 @@ resource "aws_launch_configuration" "aws-lc-blue" {
 
     lifecycle {
     create_before_destroy = true
-  }
-  
+  } 
 }
 
 resource "aws_launch_configuration" "aws-lc-green" {
@@ -21,16 +20,12 @@ resource "aws_launch_configuration" "aws-lc-green" {
     key_name = var.key_name
     security_groups = [aws_security_group.private-server-sg.id]
     user_data = var.user_data //data.template_file.cloud-config.rendered
-    
   
-    
     # Has_Toggle = var.enable_green_application 
-  
   
     lifecycle {
     create_before_destroy = true
   }
-  
 }
 resource "aws_security_group" "private-server-sg" {
   name        = "private-server-sg" //private_server_sg_name

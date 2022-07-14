@@ -21,14 +21,3 @@ module "ahmad_vpc" {
 
 
 }
-
-
-# terraform commands
-# terraform destroy -target aws_instance.web-server-instance (this only destroys one resource)
-# terraform apply -target "aws_instance..... same info" (this creates only one resrouce) 
-# terraform output will output info after you do an apply 
-
-
-
-
-

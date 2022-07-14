@@ -45,6 +45,4 @@ resource "aws_autoscaling_group" "aws-asg-green" {
   ]
     
       # Has_Toggle = var.enable_green_application
-    
-  
 }

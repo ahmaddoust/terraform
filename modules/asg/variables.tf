@@ -63,8 +63,6 @@ variable "private_server_ami_green" {}
 #     default = false
 # }
 
-
-
 # variable "lb_listener_port" {
 #     description = "The port that the AWS Application Load Balancer listens on."
 #     default = "80"
@@ -127,22 +125,16 @@ variable "private_server_ami_green" {}
 
 # variable "lb_sg_to_port" {}
 
-
 # variable "vpc_azs" {}
 
 # variable "vpc_private_subnets" {}
-
-
 
 # variable "lb-name" {} 
 
 # variable "test-server-lb-name" {}
 
-
 # variable "private_server_sg_name" {}
-
 
 # variable "aws-lb-tg-name" {}
 
 # variable "aws-lc-name" {}
-

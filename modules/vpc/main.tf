@@ -1,5 +1,3 @@
-
-
 provider "aws" {
   region = var.region
 }
@@ -70,6 +68,4 @@ module "vpc" {
 #   tags = {
 #     Name = "bastion_sg"
 #   }
-
 # }
-

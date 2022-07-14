@@ -43,12 +43,12 @@ data "template_file" "cloud-config" {
 }
 
 data "aws_acm_certificate" "issued" {
-  domain   = "*.ahmaddoust.com"
+  domain   = "*.website.com"
   statuses = ["ISSUED"]
 }
 
 data "aws_route53_zone" "selected" {
-  name         = "ahmaddoust.com"
+  name         = "website.com"
   private_zone = false
 }
 
